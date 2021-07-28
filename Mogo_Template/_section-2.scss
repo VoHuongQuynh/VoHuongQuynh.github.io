@@ -1,0 +1,77 @@
+.services{
+    margin-bottom: 12rem;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+        &:not(:last-child){
+            padding-bottom: 5rem;
+            margin-bottom: 5rem;
+            border-bottom: 1px solid $gray-border;
+        }
+        &-item{
+            width: calc(33.33% - (14rem / 3));
+            display: flex;
+            align-items: flex-start;
+        }
+        &-image{
+            margin-right: 3rem;
+        }
+        &-title{
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media screen and(max-width: 1023px) {
+        margin-bottom: 7rem;
+        &__list-item{
+            flex-direction: column;
+            width: calc(33.33% - 2rem);
+        }
+        &__list-image{
+            margin-bottom: 3rem;
+        }
+    }        
+    @media screen and(max-width: 767px){
+        margin-bottom: 8rem;
+        &__list{
+           flex-wrap: nowrap;
+           margin-left: -3rem;
+           overflow-x: scroll;
+           scroll-snap-type: x mandatory;
+           scroll-snap-stop: always;
+        //    overflow: auto;
+        //    overflow-y: hidden;
+        //    -ms-touch-action: manipulation;
+        //    touch-action: manipulation;
+        //    -webkit-overflow-scrolling: touch;
+            padding: 2rem;
+            &:not(:last-child){
+                padding-bottom: 4rem;
+                margin-bottom: 2rem;
+            }
+        }
+        &__list::-webkit-scrollbar{
+            display: none;
+            width: 0;
+        }
+        &__list-item{
+            width: 70%;
+            flex: none;
+            box-shadow: 0 0 10px $gray-border;
+            margin-left: 2rem;
+            text-align: center;
+            padding: 5rem 2rem;
+            scroll-snap-align: center;
+        }
+        &__list-image{
+            margin: 0 auto;
+            padding-bottom: 2rem;
+        }
+    }
+    @media screen and(max-width: 639px){
+        margin-bottom: 3rem;
+    }
+}
+

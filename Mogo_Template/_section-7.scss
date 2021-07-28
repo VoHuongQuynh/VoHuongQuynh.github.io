@@ -1,0 +1,112 @@
+.clients{
+    margin-bottom: 11rem;
+    padding: 10rem 4rem;
+    background: url(./images/img-24.jpg) center;
+    background-size: cover;
+    position: relative;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.8;
+    }
+    &__block{
+        margin-bottom: 9rem;
+        position: relative;
+        z-index: 2;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8rem 7rem;
+        position: relative;
+        z-index: 2;
+
+        &-item{
+            display: flex;
+            align-items: flex-start;
+        }
+        &-image{
+            margin-right: 3rem;
+        }
+        &-name{
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+        &-job{
+            display: block;
+            font-style: italic;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            position: relative;
+            &::before{
+                content: "";
+                width: 6rem;
+                height: 0.3rem;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $gradient-color-1;
+            }
+        }
+    }
+
+    @media screen and(max-width: 1023px){
+        margin-bottom: 8rem;
+        padding: 3rem 0;
+        &__list{
+            grid-gap: 6rem 5rem;
+        }
+        &__list-image{
+            max-width: 80px;
+        }
+    }
+
+    @media screen and(max-width: 767px){
+        margin-bottom: 5rem;
+        padding: 4rem;
+        &__block{
+            margin-bottom: 6rem;
+        }
+        &__list{
+            display: flex;
+            overflow-y: scroll;
+            scroll-snap-type: x  mandatory;
+            scroll-snap-stop: always;
+            & > *{
+                width: 100%;
+            }
+        }
+        &__list-item{
+            flex: none;
+            display: flex;
+            flex-direction: column;
+            scroll-snap-align: center;
+            padding: 2rem;
+            text-align: center;
+            background-color: rgba( white, 0.4);
+        }
+        &__list-image{
+            margin: 0 auto 2rem;
+        }
+        &__list-job{
+            padding-bottom: 1rem;
+            &::before{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    @media screen and(max-width: 639px){
+        padding: 3rem 0;
+        &__block{
+            margin-bottom: 4rem;
+        }
+    }
+}

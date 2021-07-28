@@ -1,0 +1,181 @@
+.team{
+    text-align: center;
+    margin-bottom: 11rem;
+    &__desc{
+        display: inline-block;
+        max-width: 80%;
+        margin-bottom: 9rem;
+    }
+    &__list{
+        display: flex;
+        // flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 19rem;
+        &-item {
+            width: calc(33.33% - 2rem);
+            height: 47rem;
+            position: relative;
+            &::before{
+                content:"";
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to bottom, $gradient-color-1, $gradient-color-2);
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                left: 0;
+                transition: 0.25s linear;
+                opacity: 0;
+            }
+            &:hover::before{
+                opacity: 0.8;
+                top: -10px;
+                left: -10px;
+            }
+            &:after{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-right: 11px solid $blue-color;
+                border-bottom: 11px solid $blue-color;
+                opacity: 0;
+                transition: 0.25s linear;
+            }
+            &:hover::after{
+                opacity: 1;
+            }
+
+            &:hover .team__list-social{
+               opacity: 1;
+               height: 5.5rem;
+            }
+            &:hover .team__list-image{
+                transform: translate(-10px, -10px);
+            }
+        }
+        &-image{
+            width: 100%;
+            height: 100%;
+            transition: 0.25s linear;
+        }
+        &-social{
+            width: 22rem;
+            height: 0;
+            position: absolute;
+            z-index: 99;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: $gradient-color-2;
+            display: flex;
+            opacity: 0;
+            transition: 0.25s linear;
+        }
+        &-icon{
+            width: 25%;
+            height: 100%;
+            transition: 0.25s linear;
+            &::before{
+                font-size: 3rem;
+                color: $gradient-color-1;
+                position: relative;
+                top: 25%;
+                transition: 0.25s linear;
+            }
+            &:not(:last-child){
+                border-right: 1px solid $gradient-color-1;
+            }
+            &:hover{
+                background-color: #f38181;
+            }
+            &:hover::before{
+                color: white;
+            }
+          }
+        &-name{
+            font-weight: 550;
+            margin: 3rem 0 0.5rem;
+        }
+        &-job{
+            font-style: italic;
+        }
+    }
+    &__logo{
+        height: 25rem;
+        background-color: $gray-background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-image{
+            display: inline-block;
+            max-width: 80%;
+        }
+    }
+
+    @media screen and(max-width: 1279px){
+        margin-bottom: 9rem;
+        &__desc{
+            margin-bottom: 5rem;
+        }
+        &__list{
+            margin-bottom: 13rem;
+        }
+        &__list-item{
+            height: 40rem;
+        }
+    }
+
+    @media screen and(max-width: 1023px){
+        &__desc{
+            margin-bottom: 4rem;
+        }
+        &__list-item{
+            width: calc(33.33% - 1rem);
+            height: 30rem;
+        }
+        &__logo{
+            height: 15rem;
+        }
+    }
+
+    @media screen and(max-width: 767px){
+        margin-bottom: 7rem;
+        &__list{
+            margin-left: -2rem;
+            margin-bottom: 5rem;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            scroll-snap-stop: always;
+            &::-webkit-scrollbar{
+                display: none;
+                width: 0;
+            }
+        }
+        &__list-item{
+            flex: none;
+            scroll-snap-align: center;
+            width: 70%;
+            margin-left: 2rem;
+            background-color: #eee;
+        }
+        &__list-image{
+            
+        }
+        &__logo{
+            height: 12rem;
+        }
+    }
+    @media screen and(max-width: 639px){
+        &__list-item{
+            height: 25rem;
+        }
+        &__logo{
+            transform: scale(1.1);
+            height: 8rem;
+        }
+    }
+}

@@ -1,0 +1,222 @@
+.story{
+    margin-bottom: 10rem;
+    text-align: center;
+    &__sologan{
+        font-size: 2.4rem;
+        margin-bottom: 2.5rem;
+    }
+    &__heading{
+        font-size: 3rem;
+        font-weight: bold;
+        padding-bottom: 4rem;
+        margin-bottom: 4.5rem;
+        position: relative;
+        &::before{
+            content: "";
+            width: 6rem;
+            height: 0.3rem;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $primary-color;
+        }
+    }
+    &__desc{
+        max-width: 80%;
+        margin: 0 auto 10rem;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 11rem;
+        &-item{
+            height: 25rem;
+            position: relative;
+            transition: 0.3s linear;
+            &::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 3;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(to bottom, $gradient-color-1, $gradient-color-2);
+                opacity: 0;
+                transition: 0.25s linear;
+            }
+            &:hover::before{
+                opacity: 0.9;
+                top: -10px;
+                left: -10px;
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-right: 11px solid $blue-color;
+                border-bottom: 11px solid $blue-color;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: 0.25s linear;
+            }
+            &:hover::after{
+                opacity: 1;
+            }
+
+            &:hover .story__list-info{
+                opacity: 1;
+                visibility: visible;
+            }
+            &:hover .story__list-image{
+                transform: translate(-10px, -10px);
+            }
+        }
+        &-image{
+            height: 100%;
+            width: 100%;
+            transition: 0.25s linear;
+        }
+        &-info{
+            position: absolute;
+            z-index: 99;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            transition: 0.3s linear;
+            opacity: 0;
+            visibility: visible;
+        }
+        &-icon{
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        &-text{
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+    }
+    &__prize{
+        background-color: $blue-color;
+        &-item{
+            padding: 8rem 0;
+            color: white;
+            width: 20%;
+            border-left: 1px solid white;
+            &:last-child{
+                border-right: 1px solid white;
+            }
+        }
+        &-number{
+            display: block;
+            font-size: 7.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        &-name{
+            padding: 0 0.2rem;
+        }
+    }
+    &__inner{
+        display: flex; 
+    }
+}
+
+@media screen and(max-width: 1279px){
+    .story{
+        &__desc{
+            margin-bottom: 5rem;
+        }
+        &__list{
+            margin-bottom: 9rem;
+            &-item{
+                width: 32%;
+            }
+        }
+        &__prize-number{
+            font-size: 5rem;
+        }
+    }
+}
+
+@media screen and(max-width: 1023px){
+    .story{
+        margin-top: -3rem;
+        margin-bottom: 8rem;
+        &__list{
+            margin-bottom: 5rem;
+        }
+        &__prize-number{
+            font-size: 3.5rem;
+        }
+        &__prize-name{
+            font-size: 1.1rem;
+        }
+        &__prize-item{
+            padding: 5rem 0;
+        }
+    }
+}
+
+@media screen and(max-width: 767px){
+    .story{
+        &__heading{
+            font-size: 2.5rem;
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
+        }
+        &__desc{
+            margin-bottom: 3rem;
+        }
+        &__list{
+            flex-wrap: nowrap;
+            margin-left: -2rem;
+            margin-bottom: 3rem;
+            overflow-x:scroll;
+            scroll-snap-type: x mandatory;
+            scroll-snap-stop: always;
+            &::-webkit-scrollbar{
+                display: none;
+                width: 0;
+            }
+            &-item{
+                scroll-snap-align: center;
+                flex: none;
+                width: 80%;
+                margin-left: 2rem;
+            }
+        }
+        &__prize-item{
+            padding: 3rem 0;
+        }
+        &__prize-number{
+            font-size: 2.5rem;
+        }
+        &__prize-name{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and(max-width: 639px){
+    .story{
+        margin-bottom: 7rem;
+        &__prize-item{
+            padding: 2.5rem 0;
+        }
+        &__prize-number{
+            font-size: 2rem;
+        }
+        &__prize-name{
+            font-size: 0.8rem;
+        }
+    }
+}
