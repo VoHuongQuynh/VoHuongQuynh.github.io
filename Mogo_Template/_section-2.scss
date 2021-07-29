@@ -70,8 +70,11 @@
             padding-bottom: 2rem;
         }
     }
-    @media screen and(max-width: 639px){
+    @media screen and(max-width: 479px){
         margin-bottom: 3rem;
+        &__list-item{
+            width: 85%;
+        }
     }
 }
 

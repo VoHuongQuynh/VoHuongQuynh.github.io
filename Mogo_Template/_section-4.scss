@@ -26,6 +26,9 @@
                 padding: 1.5rem;
             }
         } 
+        &-item{
+            width: 100%;
+        }
         &-photo{
             height: calc(65% - 8px);
         }  
@@ -38,11 +41,10 @@
             color: gray;
         }
         
-        &-create{
+        &-create, &-design{
             height: calc(17.5% - 8px);
-        }
-        &-design{
-            height: calc(17.5% - 8px);
+            display: flex;
+            align-items: center;
         }
         
         &-top{
