@@ -285,16 +285,18 @@ a {
 }
 @media screen and (max-width: 639px) {
   .banner__menu-logo {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .banner__create {
     font-size: 3rem;
   }
   .banner__heading {
     font-size: 4rem;
+    padding-bottom: 4rem;
   }
   .banner__heading span {
     display: inline-block;
+    margin-top: 0.5rem;
   }
   .banner__button {
     margin-bottom: 7.5rem;
@@ -303,7 +305,7 @@ a {
     padding: 0 3rem;
   }
   .banner__line-item {
-    width: calc(50% - 4rem);
+    width: calc(50% - 3rem);
   }
   .banner__line-white {
     margin-bottom: 1.5rem;
@@ -1528,6 +1530,9 @@ a {
   .blog__list {
     padding: 0;
   }
+  .blog__list-item {
+    margin-bottom: 3rem;
+  }
 }
 
 .footer {
@@ -1787,6 +1792,9 @@ a {
   }
   .footer__coppyright span {
     font-size: 1.2rem;
+  }
+  .footer__inner {
+    padding-bottom: 2rem;
   }
 }
 

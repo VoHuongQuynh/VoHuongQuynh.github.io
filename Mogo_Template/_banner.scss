@@ -224,15 +224,17 @@
 @media screen and(max-width: 639px){
     .banner{
         &__menu-logo{
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
         &__create{
             font-size: 3rem;
         }
         &__heading{
             font-size: 4rem;
+            padding-bottom: 4rem;
             span{
                 display: inline-block;
+                margin-top: 0.5rem;
             }
         }
         &__button{
@@ -242,7 +244,7 @@
             padding: 0 3rem;
         }
         &__line-item{
-            width: calc(50% - 4rem);
+            width: calc(50% - 3rem);
         }
         &__line-white{
             margin-bottom: 1.5rem;
