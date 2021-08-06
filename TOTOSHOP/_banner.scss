@@ -1,0 +1,372 @@
+.banner{
+    width: 20%;
+    position: relative;
+    border-right: 5px solid $primary-color;
+    
+    &__inner{
+        width: 20%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    &__logo{
+        margin-bottom: 6rem;
+       img{
+           width: 18rem;
+           height: 11rem;
+           object-fit: cover;
+           box-shadow: 0 0 30px 10px rgba(black, 0.1);
+       }
+    }
+
+    &__action{
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: center;
+
+        &-icon{
+            font-size: 2.2rem;
+            color: gray;
+            cursor: pointer;
+            transition: 0.25s ease;
+
+            
+            &:first-child{
+                font-size: 2.5rem;
+            }
+            
+            &:nth-child(2){
+                color: black;
+            }
+            
+            &:not(:first-child){
+                margin-left: 2rem;
+            }
+
+            &:hover{
+                color: $primary-color;
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    &__menu{
+        width: 100%;
+        padding-right: 5px;
+
+        &-item{
+            width: 100%;
+            text-align: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid $bg-color;
+            cursor: pointer;
+            transition: 0.25s linear;
+            position: relative;
+
+            &:hover{
+                background-color: $bg-color;
+            }
+
+            &:hover .banner__menu-link{
+                color: $primary-color;
+            }
+
+            &:hover .banner__menu-link::before{
+                width: 100%;
+            }
+        }
+        &-link{
+            font-family: "Quicksand", sans-serif;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: black;
+            display: inline-block;
+            letter-spacing: 2px;
+            font-weight: 550;
+            transition: 0.25s linear;
+            padding-bottom: 0.5rem;
+            position: relative;
+
+            &::before{
+                content: "";
+                width: 0;
+                height: 0.2rem;
+                background-color: $primary-color;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: 0.25s linear;
+            }
+        }
+
+        &-hot{
+            font-size: 1.2rem;
+            color: white;
+            padding: 0.3rem 0.4rem;
+            border-radius: 3px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 15%;
+
+            &::before{
+                content: "";
+                width: 0.7rem;
+                height: 0.7rem;
+                background-color: red;
+                position: absolute;
+                top: 75%;
+                left: 35%;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+
+    &__phone{
+        width: 65%;
+        height: 4rem;
+        padding-right: 2rem;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        cursor: pointer;
+
+        & > *{
+            color: white;
+        }
+        &-icon{
+            padding: 0.5rem 1rem;
+            background-color: rgba($bg-color, 0.2);
+            &::before{
+                font-size: 2.5rem;
+            }
+        }
+        &-number{
+            font-size: 1.6rem;
+            letter-spacing: 0.1rem;
+            padding-bottom: 0.2rem;
+            border-bottom: 2px solid transparent;
+            transition: 0.25s linear;
+
+            &:hover{
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+
+    &__social{
+        display: flex;
+        align-items: center;
+
+        &-icon{
+            cursor: pointer;
+            color: gray;
+            font-size: 1.8rem;
+            transition: 0.25s ease;
+
+            &:hover{
+                color: $primary-color;
+                transform: translateY(-3px);
+            }
+
+            &::before{
+                font-size: 1.8rem;
+            }
+            &:not(:first-child){
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+.search-modal{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 0;
+    background-color: rgba(black, 0.6);
+    opacity: 0;
+
+
+    &-inner{
+        position: fixed;
+        z-index: 999;
+        top: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        height: 6.5rem;
+        transition: 0.25s linear;
+    
+        input{
+            width: 100%;
+            height: 100%;
+            padding: 0 10rem;
+            outline: none;
+            border: none;
+            font-size: 1.5rem;
+            color: gray;
+    
+        }
+        ::placeholder{
+            font-size: 1.5rem;
+            color: gray;
+            letter-spacing: 1px;
+        }
+    
+        ion-icon{
+            cursor: pointer;
+            font-size: 2.5rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    
+        ion-icon:first-child{
+            left: 50px;
+        }
+        ion-icon:last-child{
+            right: 50px;
+            color: #eee;
+            transition: 0.2s ease;
+    
+            &:hover{
+                color: gray;
+            }
+        }
+    }
+}
+
+.search-modal.is-actived{
+    height: 100vh;
+    opacity: 1;
+}
+
+.search-modal-inner.is-actived{
+    top: 65px;
+}
+
+
+
+.cart-modal{
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(black, 0.5);
+    opacity: 0;
+
+    &-inner{
+        position: fixed;
+        z-index: 999;
+        width: 30%;
+        height: 100vh;
+        padding: 6rem;
+        background-color: rgba(black, 0.9);
+        color: white;
+        transition: 0.25s linear;
+        transform: scaleX(0);
+    }
+
+    &-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 7rem;
+
+        h2{
+            letter-spacing: 1px;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid $primary-color;
+        }
+
+        i{
+            color: white;
+            cursor: pointer;
+            font-size: 2.5rem;
+            transition: 0.25s linear;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+
+    &-product{
+        font-weight: 300;
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid white;
+    }
+
+    &-price{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+
+        h2{
+            letter-spacing: 1px;
+        }
+    }
+
+    &-button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        a{
+            cursor: pointer;
+            color: white;
+            font-weight: 500;
+            font-size: 1.3rem;
+            padding: 1.5rem 2.5rem;
+            background-color: black;
+            border: 1px solid $primary-color;
+            box-shadow: 0 0 15px rgba(white, 0.25);
+            transition: 0.25s linear;
+            overflow: hidden;
+
+            &:hover{
+                color: $primary-color;
+                border-color: white;
+                box-shadow: 0 0 20px rgba($primary-color, 0.5);
+            }
+        }
+    }
+}
+
+.cart-modal.is-actived{
+    height: 100vh;
+    opacity: 1;
+}
+
+.cart-modal-inner.is-actived{
+    transform: scaleX(1);
+}
+    
+
+@media screen and(max-width: 1279px){
+    .banner{
+        width: 25%;
+        &__inner{
+            width: 25%;
+        }
+    }
+}
+
+@media screen and(max-width: 1023px){
+    .banner{
+        display: none;
+    }
+}
