@@ -14,7 +14,7 @@ html{
 body{
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
-    padding-bottom: 70rem;
+    padding-bottom: 40rem;
 }
 a{
     display: inline-block;
@@ -120,26 +120,32 @@ img{
 .content{
     @media screen and(max-width: 1279px){
         width: 75%;
+
+        .swiper-banner{
+            height: 35vh;
+        }
     }
 
     @media screen and(max-width: 1023px){
         width: 100%;
 
         .swiper-banner{
-            height: 45vh;
+            height: 40vh;
         }
     }
 
-    @media screen and(max-width: 469px){
+    @media screen and(max-width: 479px){
         .swiper-banner{
-            height: 25vh;
+            height: 30vh;
         }
     }
 
 }
 
-@media screen and(max-width: 767px){
-    .heading{
+
+.heading{
+
+    @media screen and(max-width: 767px){
         width: 30rem;
 
         &-text{
@@ -150,11 +156,9 @@ img{
                 font-size: 1rem;
             }
         }
-    }
-}
+    }   
 
-@media screen and(max-width: 469px){
-    .heading{
+    @media screen and(max-width: 479px){
         width: 25rem;
 
         &-text{
@@ -165,5 +169,21 @@ img{
                 font-size: 0.9rem;
             }
         }
+        
+    }
+}
+
+.youtube{
+    @media screen and(max-width: 1279px){
+        height: 50rem;
+    }
+    @media screen and(max-width: 1023px){
+        height: 40rem;
+    }
+    @media screen and(max-width: 767px){
+        height: 30rem;
+    }
+    @media screen and(max-width: 469px){
+        height: 25rem;
     }
 }

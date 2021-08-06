@@ -359,8 +359,12 @@
 @media screen and(max-width: 1279px){
     .banner{
         width: 25%;
+        
         &__inner{
             width: 25%;
+        }
+        &__phone-number{
+            font-size: 1.4rem;
         }
     }
 }

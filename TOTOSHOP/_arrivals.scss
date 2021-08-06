@@ -136,7 +136,8 @@
         }
     }
 
-    @media screen and(max-width: 469px){
+    @media screen and(max-width: 479px){
+        padding: 0 2rem;
         &__list{
 
             &-item{
@@ -148,5 +149,6 @@
             }
         }
     }
+
 }
 
