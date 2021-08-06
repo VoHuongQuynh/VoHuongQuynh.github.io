@@ -690,22 +690,11 @@ img {
   }
   .arrivals__footer {
     margin-top: 0;
+    height: 7rem;
   }
 }
 @media screen and (max-width: 469px) {
-  .arrivals__list {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
-  }
-  .arrivals__list::-webkit-scrollbar {
-    display: none;
-    width: 0;
-  }
   .arrivals__list-item {
-    flex: none;
-    scroll-snap-align: center;
     width: 100%;
   }
   .arrivals__list-wrap {
