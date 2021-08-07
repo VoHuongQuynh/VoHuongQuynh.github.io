@@ -391,6 +391,34 @@ img {
 .search-modal-inner ion-icon:last-child:hover {
   color: gray;
 }
+@media screen and (max-width: 767px) {
+  .search-modal-inner input {
+    padding: 0 7rem;
+  }
+  .search-modal-inner ion-icon:first-child {
+    left: 20px;
+  }
+  .search-modal-inner ion-icon:last-child {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 469px) {
+  .search-modal-inner input {
+    padding: 0 5rem;
+  }
+  .search-modal-inner ::placeholder {
+    font-size: 1.3rem;
+  }
+  .search-modal-inner ion-icon {
+    font-size: 2rem;
+  }
+  .search-modal-inner ion-icon:first-child {
+    left: 10px;
+  }
+  .search-modal-inner ion-icon:last-child {
+    right: 10px;
+  }
+}
 
 .search-modal.is-actived {
   height: 100vh;
@@ -400,15 +428,23 @@ img {
 .search-modal-inner.is-actived {
   top: 65px;
 }
-
-.banner.is-actived {
-  position: fixed;
-  transition: 0.25s linear;
-  background-color: rgba(0, 0, 0, 0.8);
+@media screen and (max-width: 1023px) {
+  .search-modal-inner.is-actived {
+    width: 60%;
+    top: 14rem;
+  }
 }
-.banner.is-actived ion-icon {
-  transition: 0.25s linear;
-  color: white;
+@media screen and (max-width: 767px) {
+  .search-modal-inner.is-actived {
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 469px) {
+  .search-modal-inner.is-actived {
+    width: 70%;
+    height: 4.5rem;
+    top: 11rem;
+  }
 }
 
 .cart-modal {
@@ -538,18 +574,34 @@ img {
   .banner__logo {
     margin: 0;
     box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.4);
+    width: 15rem;
+    margin-left: 3rem;
   }
   .banner__logo img {
-    width: 15rem;
+    width: 100%;
     height: auto;
+  }
+
+  .banner.is-actived {
+    position: fixed;
+    transition: 0.25s linear;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .banner.is-actived ion-icon {
+    transition: 0.25s linear;
+    color: white;
   }
 }
 @media screen and (max-width: 767px) {
   .banner {
     height: 10rem;
   }
-  .banner__logo img {
+  .banner__logo {
     width: 12rem;
+    margin-left: 2.5rem;
+  }
+  .banner__logo img {
+    width: 100%;
   }
   .banner__action ion-icon:nth-child(3) {
     display: none;
@@ -558,6 +610,9 @@ img {
 @media screen and (max-width: 469px) {
   .banner {
     height: 8rem;
+  }
+  .banner__logo {
+    margin-left: 2.5rem;
   }
   .banner__logo img {
     width: 10rem;

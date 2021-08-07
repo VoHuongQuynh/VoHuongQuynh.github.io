@@ -47,7 +47,7 @@ cartClose.addEventListener('click', function(){
 
 const bannerBg = document.querySelector('.banner');
 window.addEventListener('scroll', function(){
-    if(window.pageYOffset > 100){
+    if(window.pageYOffset > 50){
         bannerBg.classList.add('is-actived');
     }
     else{
