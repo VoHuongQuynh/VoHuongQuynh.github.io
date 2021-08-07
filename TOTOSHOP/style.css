@@ -654,7 +654,7 @@ img {
   .banner__menuIcon {
     display: block;
   }
-  .banner__social, .banner__action ion-icon:first-child {
+  .banner__social, .banner__phone, .banner__action ion-icon:first-child {
     display: none;
   }
   .banner__action {
@@ -704,7 +704,7 @@ img {
   .banner__menuRespon img {
     width: 18rem;
     height: auto;
-    box-shadow: 0 0 40px 7px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 40px 7px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 20px;
     left: 50%;
@@ -727,15 +727,6 @@ img {
     transform: translateX(-100%);
     transition: 0.35s linear;
   }
-  .banner__phone {
-    width: max-content;
-    position: absolute;
-    z-index: 99999;
-    top: 57rem;
-    left: 9rem;
-    transform: translateX(-30rem);
-    transition: 0.35s linear;
-  }
 }
 @media screen and (max-width: 1023px) and (max-width: 767px) {
   .banner__menuRespon {
@@ -755,10 +746,6 @@ img {
   .banner__menu {
     top: 14rem;
     width: 85%;
-  }
-  .banner__phone {
-    left: 7.5rem;
-    top: 50rem;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -963,8 +950,8 @@ img {
 }
 
 .arrivals {
-  padding: 0 4rem;
   margin-bottom: 8rem;
+  padding: 0 4rem;
 }
 .arrivals__list {
   display: flex;
