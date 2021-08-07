@@ -42,3 +42,15 @@ cartClose.addEventListener('click', function(){
     cartModal.classList.remove('is-actived');
     cartModalInner.classList.remove('is-actived');
 })
+
+
+
+const bannerBg = document.querySelector('.banner');
+window.addEventListener('scroll', function(){
+    if(window.pageYOffset > 100){
+        bannerBg.classList.add('is-actived');
+    }
+    else{
+        bannerBg.classList.remove('is-actived');
+    }
+})
