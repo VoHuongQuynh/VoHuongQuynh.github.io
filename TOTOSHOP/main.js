@@ -54,3 +54,26 @@ window.addEventListener('scroll', function(){
         bannerBg.classList.remove('is-actived');
     }
 })
+
+
+const menuWrap = document.querySelector('.banner__menuWrap');
+const menuClick = document.querySelector('.banner__menuClick');
+const menuRespon = document.querySelector('.banner__menuRespon');
+const menuMain = document.querySelector('.banner__menu');
+const phone = document.querySelector('.banner__phone');
+
+menuClick.addEventListener('click', function(){
+    menuWrap.classList.add('is-actived');
+    menuRespon.classList.add('is-actived');
+    menuMain.classList.add('is-actived');
+    phone.classList.add('is-actived');
+})
+
+const menuClose = document.querySelector('.menu-close');
+menuClose.addEventListener('click', function(){
+    menuWrap.classList.remove('is-actived');
+    menuRespon.classList.remove('is-actived');
+    menuMain.classList.remove('is-actived');
+    phone.classList.remove('is-actived');
+})
+
