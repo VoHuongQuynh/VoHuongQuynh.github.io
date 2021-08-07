@@ -141,12 +141,6 @@ img {
   .heading {
     width: 25rem;
   }
-  .heading-text {
-    font-size: 1.7rem;
-  }
-  .heading-icon ion-icon {
-    font-size: 0.9rem;
-  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -745,6 +739,7 @@ img {
   position: relative;
 }
 .news__heading-text {
+  width: max-content;
   font-size: 2.2rem;
   font-weight: 550;
   letter-spacing: 1px;
@@ -1016,8 +1011,7 @@ img {
     padding: 0 2rem 3rem;
   }
   .news__heading-text {
-    padding: 0 0.75rem;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   .news__content .swiper-container {
     height: 27.5rem;

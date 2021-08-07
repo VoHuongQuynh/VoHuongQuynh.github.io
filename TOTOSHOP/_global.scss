@@ -159,17 +159,7 @@ img{
     }   
 
     @media screen and(max-width: 479px){
-        width: 25rem;
-
-        &-text{
-            font-size: 1.7rem;
-        }
-        &-icon{
-            ion-icon{
-                font-size: 0.9rem;
-            }
-        }
-        
+        width: 25rem;  
     }
 }
 
