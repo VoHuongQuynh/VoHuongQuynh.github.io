@@ -218,7 +218,7 @@
         transform: translateX(-50%);
         width: 40%;
         height: 6.5rem;
-        transition: 0.25s linear;
+        transition: 0.35s linear;
     
         input{
             width: 100%;
@@ -673,9 +673,17 @@
         @media screen and(max-width: 469px){
             &__menuRespon{
                 width: 85%;
+                img{
+                    width: 12rem;
+                }
             }
             &__menu{
+                top: 14rem;
                 width: 85%;
+            }
+            &__phone{
+                left: 7.5rem;
+                top: 50rem;
             }
         }
     }
@@ -738,8 +746,9 @@
 
         &__logo{
             margin-left: 5rem;
+            width: 10rem;
             img{
-                width: 10rem;
+                width: 100%;
             }
         }
     }
