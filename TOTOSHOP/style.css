@@ -631,6 +631,9 @@ img {
   .banner__inner {
     width: 25%;
   }
+  .banner__phone {
+    width: 70%;
+  }
   .banner__phone-number {
     font-size: 1.4rem;
   }

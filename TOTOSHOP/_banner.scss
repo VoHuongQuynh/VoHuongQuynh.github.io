@@ -535,8 +535,11 @@
         &__inner{
             width: 25%;
         }
-        &__phone-number{
-            font-size: 1.4rem;
+        &__phone{
+            width: 70%;
+            &-number{
+                font-size: 1.4rem;
+            }
         }
     }
 }
