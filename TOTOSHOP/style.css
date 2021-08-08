@@ -803,7 +803,7 @@ img {
     height: 8rem;
   }
   .banner__logo {
-    margin-left: 4rem;
+    margin-left: 3.7rem;
     width: 10rem;
   }
   .banner__logo img {
@@ -877,7 +877,6 @@ img {
   align-items: center;
 }
 .product__bottom-text h2 {
-  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 1.3rem;
@@ -886,12 +885,23 @@ img {
   transform: translateY(10px) scaleY(0);
 }
 .product__bottom-text span {
-  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 500;
   transition: 0.2s linear 0.2s;
   opacity: 0;
   transform: translateY(10px) scaleY(0);
+}
+.product__bottom-text--big h2 {
+  font-size: 2.5rem;
+}
+.product__bottom-text--big span {
+  font-size: 1.5rem;
+}
+.product__bottom-text--small h2 {
+  font-size: 2rem;
+}
+.product__bottom-text--small span {
+  font-size: 1.2rem;
 }
 .product__bottom-image {
   width: 100%;
@@ -925,6 +935,18 @@ img {
     padding: 0 1rem;
     grid-template-rows: 12.5rem 1rem 12.5rem;
     grid-column-gap: 1rem;
+  }
+  .product__bottom-text--big h2 {
+    font-size: 2.1rem;
+  }
+  .product__bottom-text--big span {
+    font-size: 1.3rem;
+  }
+  .product__bottom-text--small h2 {
+    font-size: 1.5rem;
+  }
+  .product__bottom-text--small span {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 479px) {
@@ -970,6 +992,7 @@ img {
   transform: scale(1.1);
 }
 .arrivals__list-item:hover .arrivals__list-type {
+  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.3);
   height: 20%;
 }
 .arrivals__list-item:hover .arrivals__list-type img {
@@ -1036,7 +1059,7 @@ img {
 
 @media screen and (max-width: 1279px) {
   .arrivals {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
   .arrivals__list {
     justify-content: center;
@@ -1261,7 +1284,7 @@ img {
 
 @media screen and (max-width: 1279px) {
   .news {
-    padding: 0 3rem 3rem;
+    padding: 0 2rem 3rem;
   }
   .news__content {
     flex-direction: column;
