@@ -308,7 +308,7 @@
         }
     }
 
-    @media screen and(max-width: 469px){
+    @media screen and(max-width: 479px){
         &-inner{
             height: 4.8rem;
             width: 70%;
@@ -488,7 +488,7 @@
         }
     }
 
-    @media screen and(max-width: 469px){
+    @media screen and(max-width: 479px){
         &-inner{
             padding: 2.5rem 1.5rem;
             width: 75%;
@@ -660,16 +660,16 @@
             }
         }
 
-        @media screen and(max-width: 469px){
+        @media screen and(max-width: 479px){
             &__menuRespon{
-                width: 85%;
+                width: 80%;
                 img{
                     width: 12rem;
                 }
             }
             &__menu{
                 top: 14rem;
-                width: 85%;
+                width: 80%;
             }
         }
     }
@@ -726,7 +726,7 @@
     }
 }
 
-@media screen and(max-width: 469px){
+@media screen and(max-width: 479px){
     .banner{
         height: 8rem;
 
