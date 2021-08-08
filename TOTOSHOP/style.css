@@ -297,7 +297,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   cursor: pointer;
 }
 .banner__phone > * {
@@ -314,7 +314,6 @@ img {
   padding-left: 1rem;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
-  padding-bottom: 0.2rem;
   border-bottom: 2px solid transparent;
   transition: 0.25s linear;
 }
