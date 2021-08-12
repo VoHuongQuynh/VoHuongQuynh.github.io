@@ -1187,7 +1187,7 @@ img {
 }
 .news__content .swiper-content {
   width: 100%;
-  min-height: 6rem;
+  height: 6rem;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   z-index: 999;
@@ -1203,13 +1203,14 @@ img {
   background-color: #3BA1A2;
 }
 .news__content .swiper-content-desc {
+  width: max-content;
   font-size: 1.5rem;
   padding: 1rem;
 }
 .news__content .swiper-content-desc a {
   color: white;
-  transition: 0.25s linear;
   border-bottom: 1px solid transparent;
+  transition: 0.25s linear;
 }
 .news__content .swiper-content-desc a:hover {
   color: #78cccd;
@@ -1298,7 +1299,7 @@ img {
 }
 .news__button-link {
   color: black;
-  font-size: 1.6 rem;
+  font-size: 1.6rem;
   font-weight: 450;
   transition: 0.25s linear;
 }
@@ -1415,6 +1416,15 @@ img {
   }
   .news__content .swiper-content-heading, .news__content .swiper-content-desc {
     font-size: 1.2rem;
+  }
+  .news__content .swiper-content-desc {
+    width: 100%;
+  }
+  .news__content .swiper-content-desc a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 0.5rem;
   }
   .news__content .swiper-button-prev, .news__content .swiper-button-next {
     display: none;
