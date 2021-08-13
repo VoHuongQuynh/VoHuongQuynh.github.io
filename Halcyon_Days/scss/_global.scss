@@ -1,0 +1,97 @@
+$primary-color: #3DC9B3;
+$bg-color: #242830;
+$bg2-color: #F3F5F8;
+
+$text-color-small: #8C9398;
+$text-color-big: #353535;
+$gray-color: #A1A9B0;
+
+
+*, *::before, *:after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: $text-color-small;
+    padding-bottom: 50rem;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.big__text{
+    text-transform: uppercase;
+    color: $text-color-big;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    
+    &--border{
+        width: max-content;
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
+        position: relative;
+        &::before{
+            content: "";
+            width: 3.5rem;
+            height: 0.4rem;
+            border: 2px solid $primary-color;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &--image{
+        margin-bottom: 2rem;
+    }
+}
+
+.slick-group{
+    .slick-dots{
+        display: inline-block;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slick-dots li{
+        display: inline-block;
+        margin: 0 0.7rem;
+    }
+
+    .slick-dots li button{
+        font-size: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        outline: none;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .slick-dots .slick-active button{
+        background-color: $primary-color;
+    }
+}

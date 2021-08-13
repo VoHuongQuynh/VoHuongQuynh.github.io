@@ -1,0 +1,187 @@
+.team{
+    
+    &__content{
+        text-align: center;
+        margin-bottom: 11rem;
+
+        &-image{
+            margin: 0 auto 8rem;
+        }
+
+        &-list{
+            display: flex;
+            align-items: center;
+        }
+
+        &-item{
+            width: calc(100% - 2.5rem) !important;
+
+            img{
+                margin: 0 auto 5rem;
+            }
+        }
+
+        &-heading{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-desc{
+            margin-bottom: 1.5rem;
+        }
+
+        &-social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-icon{
+            cursor: pointer;
+            width: 4.5rem;
+            height: 4.5rem;
+            background-color: $bg-color;
+            border-radius: 50%;
+            margin-left: 1.5rem;
+            position: relative;
+            transition: 0.25s linear;
+
+            &:hover{
+                background-color: $primary-color;
+            }
+
+            &::before{
+                color: white;
+                font-size: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &__footer{
+        background: url(./images/keyboard-bg.jpg) center;
+        background-size: cover;
+        padding: 13.5rem 0;
+        text-align: center;
+        color: white;
+        position: relative;
+
+        &-icon{
+            display: block;
+            margin-bottom: 1.5rem;
+            &::before{
+                font-size: 3rem;
+            }
+        }
+        
+        &-heading{
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 3.5rem;
+        }
+
+        &-send{
+            display: flex;
+            justify-content: center;
+        }
+        
+        &-input{    
+            width: 35rem;
+            height: 6rem;
+            outline: none;
+            border: 1px solid white;
+            background-color: rgba(#eee, 0.1);
+            color: white;
+            padding: 0 2rem;
+        }
+        &-button{
+            width: 9rem;
+            height: 6rem;
+            margin-left: 0.3rem;
+            background-color: rgba( $primary-color, 0.7);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.25s linear;
+
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+
+        &-toTop{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            background-color: rgba($primary-color, 0.6);
+            position: absolute;
+            bottom: -2.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.25s linear;
+
+            &:hover{
+                background-color: $primary-color;
+            }
+
+            &:hover i{
+                transform: translateY(-3px);
+            }
+
+            i{
+                color: white;
+                font-size: 3rem;
+                font-weight: bold;
+                transition: 0.25s linear;
+            }
+        }
+    }
+
+
+    @media screen and(max-width: 1023px){
+        &__content{
+
+            &-desc{
+                margin-bottom: 2rem;
+            }
+            &-social{
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    @media screen and(max-width: 767px){
+        &__content{
+
+            &-item{
+                width: 100% !important;
+            }
+        }
+    }
+
+    @media screen and(max-width: 469px){
+        &__footer{
+            padding: 10.5rem 0;
+            
+            &-send{
+                flex-direction: column;
+                align-items: center;
+            }
+            &-input{
+                width: 80%;
+                height: 5rem;
+            }
+            &-button{
+                margin-top: 1rem;
+                height: 5rem;
+            }
+        }
+    }
+}
