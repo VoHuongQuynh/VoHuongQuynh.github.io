@@ -1,0 +1,79 @@
+.hero {
+    margin: 28rem 0 55rem;
+    display: block;
+
+    &__caption {
+        font-size: 12rem;
+        font-weight: 800;
+    }
+
+    &__heading {
+        font-size: 4rem;
+        margin-bottom: 7rem;
+    }
+
+    &__play {
+        display: flex;
+        align-items: center;
+        gap: 0 3rem;
+
+        &-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: white;
+        }
+    }
+
+    @include maxWidth(1599px) {
+        margin: 20rem 0 40rem;
+    }
+
+    @include maxWidth(1339px) {
+        margin: 15rem 0 25rem;
+    }
+
+    @include maxWidth(1023px) {
+        margin: 10rem 0 15rem;
+
+        &__caption {
+            font-size: 7rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &__heading {
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        &__play {
+            gap: 0;
+
+            &-image img{
+                width: 50%;
+            }
+            &-text {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    @include maxWidth(767px) {
+        margin: 7rem 0 9rem;
+
+        &__caption {
+            font-size: 5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &__heading {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        &__play {
+            &-text {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

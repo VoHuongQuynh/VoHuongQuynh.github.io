@@ -1,0 +1,103 @@
+*, *::before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $primary-font;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    color: $gray-text;
+    background-color: $gray-dark;
+    padding-bottom: 20rem;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+.wrapper {
+    background: url(../images/img1.jpg) no-repeat top / 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.second-font {
+    font-family: $second-font;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.text {
+    &__caption {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $pink-text;
+        margin-bottom: 5rem;
+    }
+
+    &__heading {
+        font-size: 3.6rem;
+        line-height: 1.55;
+        margin-bottom: 5rem;
+    }
+
+    &__desc {
+        line-height: 1.9;
+    }
+
+    &--left {
+        text-align: left;
+        max-width: 450px;
+    }
+
+    &--center {
+        max-width: 480px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    @include maxWidth(1023px) {
+        &__caption, &__heading {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include maxWidth(767px) {
+        &__heading {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    padding: 2rem 7rem;
+    border-radius: 6px;
+    font-weight: bold;
+
+    &--primary {
+        color: white;
+        background: linear-gradient(to right, $color-1, $color-2);
+    }
+}
+

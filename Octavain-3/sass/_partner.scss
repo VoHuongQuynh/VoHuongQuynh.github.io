@@ -1,0 +1,45 @@
+.partner {
+    margin-bottom: 19rem;
+    text-align: center;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem 3rem;
+
+        &-item {
+            background-color: $gray-light;
+            padding: 4.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            transition: 0.2s linear;    
+
+            &:hover > * {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    @include maxWidth(1023px) {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+            margin-top: 5rem;
+        }
+    }
+
+    @include maxWidth(767px) {
+        margin-bottom: 10rem;
+        
+        &__list {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            &-item {
+                scroll-snap-align: center;
+                scroll-snap-stop: always;
+            }
+        }
+    }
+}

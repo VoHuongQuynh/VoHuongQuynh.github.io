@@ -1,0 +1,162 @@
+.footer {
+
+    &__content {
+        background-color: #282f3a;
+        padding: 45.3rem 0 10rem;
+        
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 0 13rem;
+            position: relative;
+        }
+
+        &-logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 4rem;
+        }
+
+        &-image {
+            margin-right: 1rem;
+        }
+
+        &-text {
+            color: white;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        &-desc {
+            line-height: 1.9;
+            margin-bottom: 4rem;
+        }
+
+        &-social {
+            display: flex;
+            gap: 0 4rem;
+            ion-icon {
+                cursor: pointer;
+                transition: 0.2s linear;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+
+        &-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 4.5rem;
+        }
+
+        &-link{
+            a {
+                color: $gray-text;
+            }
+            &:not(:last-child) {
+                margin-bottom: 3.5rem;
+            }
+        }
+
+        &-item {
+            margin-bottom: 4.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem 0;
+
+            p {
+                line-height: 1.9;
+            }
+        }
+
+        &-highlight {
+            color: white;
+        }
+    
+    }
+
+    &__bottom {
+        background-color: #252b36;
+        
+        &-main {
+            padding: 7rem 0;
+            position: relative;
+        }
+
+        &-text span {
+            color: white;
+        }
+
+        &-rocket {
+            display: block;
+            color: white;
+            font-size: 1.8rem;
+            padding: 2rem;
+            background-color: $blue;
+            border-radius: 5px;
+            position: absolute;
+            right: 0;
+            top: 0;;
+            transform: translateY(-50%);
+        }  
+    }
+
+    @include maxWidth(1023px) {
+        &__content {
+            padding: 40.3rem 0 5rem;
+           &-list {
+               grid-gap: 0 5rem;
+           }
+           &-social {
+               gap: 0 2rem;
+           }
+        }
+        &__bottom-main {
+            padding: 5rem 0;
+        }
+    }
+
+    @include maxWidth(1023px) {
+        &__content {
+           &-list {
+               grid-template-columns: 1fr;
+               grid-gap: 4rem 0;
+           }
+
+           &-desc {
+               margin: -2rem 0 2rem;
+           }
+
+           &-social {
+               gap: 0 2rem;
+           }
+
+           &-title {
+               margin-bottom: 3rem;
+           }
+
+           &-link:not(:last-child){
+               margin-bottom: 2rem;
+           }
+
+           &-item {
+               gap: 1rem 0;
+               margin-bottom: 2rem;
+           }
+        }
+
+        &__bottom {
+            &-main {
+                padding: 3rem 0;
+            }
+            
+            &-text {
+                line-height: 1.5;
+            }
+        }
+    }
+}

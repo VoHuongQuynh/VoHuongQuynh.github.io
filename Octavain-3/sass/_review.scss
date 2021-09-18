@@ -1,0 +1,64 @@
+.review {
+    margin-bottom: 20rem;
+
+    &__content {
+        max-width: 62rem;
+        text-align: center;
+        margin: 8rem auto 0;
+        padding: 8rem 10rem 7rem;
+        box-sizing: unset;
+        background-color: $gray-dark;
+        box-shadow: 0 0 30px 10px $gray-light;
+        border-radius: 10px;
+        position: relative;
+
+        &-quote {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-comment {
+            font-size: 3rem;
+            line-height: 1.6; 
+            color: #eeeeee; 
+            margin-bottom: 5.5rem;
+
+            span {
+                font-weight: bold;
+            } 
+        }
+
+        &-image {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+        }
+
+        &-name {
+            font-family: $second-font;
+            font-weight: bold;
+            font-size: 1.8rem;
+            display: block;
+            margin-top: 3rem;
+        }
+    }
+
+    @include maxWidth(1023px) {
+        margin-bottom: 10rem;
+    }
+
+    @include maxWidth(767px) {
+        
+        &__content {
+            margin-top: 5rem;
+            padding: 4rem 1.5rem;
+
+            &-comment {
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
