@@ -1,0 +1,154 @@
+.review {
+    margin-bottom: 7rem;
+    display: block;
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        padding-top: 3rem;
+    }
+
+    &__slide {
+        width: 66.5rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+        &-item {
+            width: 100%;
+            // box-shadow: 0 0 10px rgba(black, 0.1);
+            background-color: #fafafa;
+            padding: 4rem 4rem 9rem;
+        }
+
+        &-user {
+            display: flex;
+            align-items: center;
+            gap: 0 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        &-image {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 100rem;
+        }
+
+        &-name, &-adress{
+            font-size: 1.5rem;
+        }
+        
+        &-name {
+            font-weight: 700;
+            margin-bottom: 0.7rem;
+        }
+
+        &-cmt {
+            font-size: 2rem;
+            color: black;
+            line-height: 1.8;
+        }
+
+        $bottom: 3rem;
+        $size: 4rem;
+
+        .arrow-left, .arrow-right{
+            cursor: pointer;
+            font-size: 2rem;
+            color: black;
+            width: $size;
+            height: $size;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            position: absolute;
+            z-index: 99;
+            
+            bottom: $bottom;
+            transition: 0.2s linear;
+
+            &:hover {
+                border-color: black;
+            }
+        }
+
+        .arrow-left{
+            left: 4rem;
+        }
+        .arrow-right{
+            left: 9rem;
+        }
+
+        .slick-dots {
+            position: absolute;
+            bottom: $bottom + $size / 2;
+            left: 50%;
+            transform: translateX(-50%);
+
+            li {
+                display: inline-block;
+                margin: 0 0.5rem;
+                button {
+                    font-size: 0;
+                    border: none;
+                    width: 1rem;
+                    height: 0.5rem;
+                    border-radius: 10px;
+                    background-color: #ccc;
+                }
+            }
+
+            .slick-active button {
+                background-color: $primary-color;
+            }
+        }
+
+    }
+
+    @include maxWidth(1279px) {
+        &__slide {
+            width: 60rem;
+        }
+    }
+
+    @include maxWidth(1023px) {
+        &__main {
+            flex-direction: column;
+            gap: 5rem 0;
+        }
+
+        &__content {
+            max-width: 650px;
+        }
+
+        &__slide {
+            width: 100%;
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+
+    @include maxWidth(767px) {
+        &__content {
+            max-width: 100%;
+        }
+
+        &__slide {
+            &-item {
+                padding: 3rem 1.5rem 9rem;
+            }
+
+            .arrow-left{
+                left: 1.5rem;
+            }
+            .arrow-right{
+                left: 6.5rem;
+            }
+        }
+    }
+}

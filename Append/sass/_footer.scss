@@ -1,0 +1,145 @@
+.footer {
+
+    &__main {
+        padding: 0 1.5rem;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 7rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    &__content {
+        width: 33.33%;
+
+        &-desc {
+            font-size: 1.5rem;
+            line-height: 1.7;
+            margin-bottom: 3rem;
+        }
+
+        &-social {
+            display: flex;
+            align-items: center;
+            gap: 0 0.5rem;
+        }
+
+        &-icon {
+            width: 5rem;
+            height: 5rem;
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+            border-radius: 8px;
+            background-color: $gray-bg;
+
+            i {
+                color: black;
+                transition: 0.2s linear;
+            }
+
+            &:hover i {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $blue-text;
+        margin-bottom: 3rem;
+    }
+
+    &__menu {
+        width: 50%;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            & > * {
+                width: 33.33%;
+            }
+        }
+
+        &-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem 0;
+        }
+
+        &-item {
+            color: black;
+            font-size: 1.5rem;
+            transition: 0.2s linear;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 4.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        
+        &-links {
+            display: inline-flex;
+            align-items: center;
+            gap: 0 0.5rem;
+            
+            i {
+                font-size: 0.5rem;
+            }
+        }
+        
+        &-link {
+            color: black;
+            transition: 0.2s linear;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    @include maxWidth(1023px) {
+        &__top {
+            flex-direction: column;
+            gap: 5rem 0;
+        }
+
+        &__content, &__menu {
+            width: 100%;
+        }
+    }
+
+    @include maxWidth(767px) {
+        &__main {
+            padding: 0;
+        }
+
+        &__top {
+            padding-bottom: 4rem;
+        }
+
+        &__menu {
+            &-list {
+                gap: 4rem 0;
+                & > *{
+                    width: 50%;
+                }
+            }
+        }
+
+        &__bottom {
+            padding: 3rem 1rem;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.blog {
+    background-color: $gray-bg;
+    padding: 8rem 0;
+    display: block;
+
+    &__top {
+        max-width: 575px;
+        margin: 0 auto;
+        text-align: center;
+
+        &-heading {
+            margin-bottom: 1rem;
+        }
+        &-desc {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__list {
+        padding: 0 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem 3rem;
+        margin-bottom: 5rem;
+
+        &-item {
+            width: calc(33.33% - 2rem);
+            border-radius: 4px 4px 0 0;
+            overflow: hidden;
+            transition: 0.2s linear;
+
+            &:hover {
+                box-shadow: 0 0 20px 5px rgba(black, 0.1);
+            }
+        }
+
+        &-image {
+            cursor: pointer;
+            width: 100%;
+            height: 24.5rem;
+        }
+
+        &-content {
+            padding: 2.5rem;
+            background-color: white;
+        }
+
+        &-title {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: $gray-text;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+        }
+
+        &-date {
+            display: inline-block;
+            color: #999;
+            font-size: 1.45rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &-desc {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        &-link {
+            font-size: 1.5rem;
+            color: $primary-color;
+        }
+    }
+
+    &__button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-left: 13rem;
+        padding-right: 13rem;
+    }
+
+    @include maxWidth(1023px) {
+        &__list {
+            &-item {
+                width: calc(50% - 1.5rem);
+            }
+        }
+    }
+
+    @include maxWidth(767px) {
+        &__list {
+            padding: 0;
+
+            &-item {
+                width: 100%;
+            }
+        }
+
+        &__button {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+    }
+}

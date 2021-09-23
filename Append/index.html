@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/app.css">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+
+    <!-- font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- slick slide -->
+    <link rel="stylesheet" href="./css/slick.css">
+
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <header class="header">
+            <a href="#" class="header__logo">Append</a>
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a href="#" class="header__list-link">Home</a>
+                </li>
+
+                <li class="header__list-item">
+                    <a href="#" class="header__list-link">Page</a>
+                    <ion-icon name="chevron-down-outline" class="header__list-arrow"></ion-icon>
+                    <ul class="header__list-child">
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Single</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu Two</a>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                            <ul class="header__list-two">
+                                <li>
+                                    <a href="#">Sub Menu One</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sub Menu Two</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sub Menu Three</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Menu Three</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="header__list-item">
+                    <a href="#" class="header__list-link">Elements</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#" class="header__list-link">Contact us</a>
+                </li>
+            </ul>
+            <a href="#" class="btn btn--second header__button">Free Templates</a>
+            <div class="header__menu"></div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__main">
+                    <h1 class="hero__heading" data-aos="fade-up">We turn ideas into extraordinary digital products</h1>
+                    <p class="hero__desc" data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia
+                        and Consonantia, there live the blind texts. Separated they live.
+                    </p>
+                    <div class="hero__email" data-aos="fade-up" data-aos-delay="200">
+                        <input type="email" class="hero__email-input" placeholder="Enter email address">
+                        <a href="#" class="btn btn--primary hero__email-button">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+    <main>
+        <section class="organize">
+            <div class="container">
+                <div class="organize__list">
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-adobe.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-google.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-puma.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-adobe.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-adobe.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-google.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-puma.png" alt="">
+                    </div>
+                    <div class="organize__list-item">
+                        <img class="organize__list-image" src="./images/logo-adobe.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="services__heading blue-heading">Our Services</h2>
+                <div class="services__list">
+                    <div class="services__list-item" data-aos="fade-up">
+                        <div class="services__list-left">
+                            <i class="fa fa-pencil services__list-icon"></i>
+                        </div>
+                        <div class="services__list-content">
+                            <h3 class="services__list-title">Modern Design</h3>
+                            <p class="services__list-desc">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                            <a href="#" class="services__list-more">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="services__list-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="services__list-left">
+                            <ion-icon name="layers-outline" class="services__list-icon"></ion-icon>
+                        </div>
+                        <div class="services__list-content">
+                            <h3 class="services__list-title">High Performance</h3>
+                            <p class="services__list-desc">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                            <a href="#" class="services__list-more">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="services__list-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="services__list-left">
+                            <i class="fa fa-instagram services__list-icon"></i>
+                        </div>
+                        <div class="services__list-content">
+                            <h3 class="services__list-title">Flexible Layout</h3>
+                            <p class="services__list-desc">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                            <a href="#" class="services__list-more">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="services__list-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="services__list-left">
+                            <i class="fa fa-life-bouy services__list-icon"></i>
+                        </div>
+                        <div class="services__list-content">
+                            <h3 class="services__list-title">Free Support</h3>
+                            <p class="services__list-desc">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                            <a href="#" class="services__list-more">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="services__list-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="services__list-left">
+                            <ion-icon name="card-outline" class="services__list-icon"></ion-icon>
+                        </div>
+                        <div class="services__list-content">
+                            <h3 class="services__list-title">Cool Pricing</h3>
+                            <p class="services__list-desc">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                            <a href="#" class="services__list-more">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="services__list-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="services__list-left">
+                            <ion-icon name="phone-portrait-outline" class="services__list-icon"></ion-icon>
+                        </div>
+                        <div class="services__list-content">
+                            <h3 class="services__list-title">Mobile Apps</h3>
+                            <p class="services__list-desc">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                            </p>
+                            <a href="#" class="services__list-more">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="free free--one">
+            <h2 class="free__heading">Get this template for free! :)</h2>
+            <a href="#" class="btn btn--primary">Get it for free!</a>
+        </section>
+
+        <section class="feature">
+            <div class="container">
+                <div class="feature__main">
+                    <div class="feature__item feature__top">
+                        <div class="text feature__content" data-aos="fade-up">
+                            <h2 class="text__heading blue-heading">Far far away, behind the word mountains</h2>
+                            <p class="text__desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.</p>
+                            <a href="#" class="btn btn--primary">Get Started</a>
+                        </div>
+                        <div class="feature__top-images" data-aos="fade-up">
+                            <img src="./images/img_h_3-min.jpg" alt="" class="feature__top-big">
+                            <div class="feature__top-small">
+                                <img src="./images/img_h_2-min.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature__item feature__bottom">
+                        <div class="feature__bottom-image" data-aos="fade-up">
+                            <img src="./images/img_h_5-min.jpg" alt="">
+                        </div>
+                        <div class="text feature__content" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="text__heading blue-heading">Far far away, behind the word mountains</h2>
+                            <p class="text__desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.</p>
+                            <a href="#" class="btn btn--primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan">
+            <div class="container">
+                <div class="plan__main">
+                    <div class="plan__top" data-aos="fade-up">
+                        <h2 class="blue-heading plan__heading">Plans</h2>
+                        <div class="plan__date">
+                            <h4>Monthly</h4>
+                            <a href="#" class="plan__date-toogle"></a>
+                            <h4>Yearly</h4>
+                            <div class="plan__date-save">Save 25%</div>
+                        </div>
+                    </div>
+                    <div class="plan__list">
+                        <div class="plan__list-item" data-aos="fade-up">
+                            <h2 class="plan__list-level blue-heading">Basic</h2>
+                            <p class="plan__list-desc">Far far away, behind the word mountains</p>
+                            <div class="plan__list-number">
+                                <div class="plan__list-number-month">$29</div>
+                                <div class="plan__list-number-year">$299</div>
+                            </div>
+                            <div class="plan__list-per">
+                                <span>Per</span>
+                                <div class="">
+                                    <div class="plan__list-per-month">Month</div>
+                                    <div class="plan__list-per-year">Year</div>
+                                </div>
+                            </div>
+                            <div class="plan__list-note">
+                                <div class="plan__list-note-item">
+                                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                                    <p>Far far away, behind the word mountains</p>
+                                </div>
+                                <div class="plan__list-note-item">
+                                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                                    <p>Far far away, behind the word mountains</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--primary">Get Started</a>
+                        </div>
+                        <div class="plan__list-item plan__list-item--checked" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="plan__list-level blue-heading">Advanced</h2>
+                            <p class="plan__list-desc">Far far away, behind the word mountains</p>
+                            <div class="plan__list-number">
+                                <div class="plan__list-number-month">$49</div>
+                                <div class="plan__list-number-year">$599</div>
+                            </div>
+                            <div class="plan__list-per">
+                                <span>Per</span>
+                                <div class="">
+                                    <div class="plan__list-per-month">Month</div>
+                                    <div class="plan__list-per-year">Year</div>
+                                </div>
+                            </div>
+                            <div class="plan__list-note">
+                                <div class="plan__list-note-item">
+                                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                                    <p>Far far away, behind the word mountains</p>
+                                </div>
+                                <div class="plan__list-note-item">
+                                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                                    <p>Far far away, behind the word mountains</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--primary">Get Started</a>
+                        </div>
+                        <div class="plan__list-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="plan__list-level blue-heading">Premium</h2>
+                            <p class="plan__list-desc">Far far away, behind the word mountains</p>
+                            <div class="plan__list-number">
+                                <div class="plan__list-number-month">$99</div>
+                                <div class="plan__list-number-year">$1.999</div>
+                            </div>
+                            <div class="plan__list-per">
+                                <span>Per</span>
+                                <div class="">
+                                    <div class="plan__list-per-month">Month</div>
+                                    <div class="plan__list-per-year">Year</div>
+                                </div>
+                            </div>
+                            <div class="plan__list-note">
+                                <div class="plan__list-note-item">
+                                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                                    <p>Far far away, behind the word mountains</p>
+                                </div>
+                                <div class="plan__list-note-item">
+                                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                                    <p>Far far away, behind the word mountains</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn--primary">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review">
+            <div class="container">
+                <div class="review__main">
+                    <div class="text review__content" data-aos="fade-up">
+                        <h2 class="text__heading blue-heading">Testimonials</h2>
+                        <p class="text__desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <a href="#" class="btn btn--primary">Product Tour</a>
+                    </div>
+                    <div class="review__slide" data-aos="fade-up" data-aos-delay="100">
+                        <div class="review__slide-item">
+                            <div class="review__slide-user">
+                                <img src="./images/person_4-min.jpg" alt="" class="review__slide-image">
+                                <div class="review__slide-info">
+                                    <h4 class="review__slide-name">Kalia Woodland</h4>
+                                    <h4 class="review__slide-adress">Owner, Greenland, Inc.</h4>
+                                </div>
+                            </div>
+                            <p class="review__slide-cmt">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.”</p>
+                        </div>
+                        <div class="review__slide-item">
+                            <div class="review__slide-user">
+                                <img src="./images/person_1-min.jpg" alt="" class="review__slide-image">
+                                <div class="review__slide-info">
+                                    <h4 class="review__slide-name">Kalia Woodland</h4>
+                                    <h4 class="review__slide-adress">Owner, Greenland, Inc.</h4>
+                                </div>
+                            </div>
+                            <p class="review__slide-cmt">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.”</p>
+                        </div>
+                        <div class="review__slide-item">
+                            <div class="review__slide-user">
+                                <img src="./images/person_2-min.jpg" alt="" class="review__slide-image">
+                                <div class="review__slide-info">
+                                    <h4 class="review__slide-name">Kalia Woodland</h4>
+                                    <h4 class="review__slide-adress">Owner, Greenland, Inc.</h4>
+                                </div>
+                            </div>
+                            <p class="review__slide-cmt">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <div class="container">
+                <div class="text blog__top">
+                    <h2 class="text__heading blue-heading blog__top-heading">Our Blog Posts</h2>
+                    <p class="text__desc blog__top-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                </div>
+                <div class="blog__list">
+                    <div class="blog__list-item">
+                        <img src="./images/img_h_3-min.jpg" alt="" class="blog__list-image">
+                        <div class="blog__list-content">
+                            <a href="#" class="blog__list-title">Far far away, behind the word mountains</a>
+                            <span class="blog__list-date">April 25, 2019</span>
+                            <p class="blog__list-desc">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <a href="#" class="blog__list-link">Continue reading...</a>
+                        </div>
+                    </div>
+                    <div class="blog__list-item">
+                        <img src="./images/img_h_5-min.jpg" alt="" class="blog__list-image">
+                        <div class="blog__list-content">
+                            <a href="#" class="blog__list-title">Far far away, behind the word mountains</a>
+                            <span class="blog__list-date">April 25, 2019</span>
+                            <p class="blog__list-desc">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <a href="#" class="blog__list-link">Continue reading...</a>
+                        </div>
+                    </div>
+                    <div class="blog__list-item">
+                        <img src="./images/img_h_7-min.jpg" alt="" class="blog__list-image">
+                        <div class="blog__list-content">
+                            <a href="#" class="blog__list-title">Far far away, behind the word mountains</a>
+                            <span class="blog__list-date">April 25, 2019</span>
+                            <p class="blog__list-desc">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <a href="#" class="blog__list-link">Continue reading...</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn--primary blog__button">See All Posts</a>
+            </div>
+        </section>
+
+        <section class="free free--two">
+            <h2 class="free__heading">Get this template for free! :)</h2>
+            <a href="#" class="btn btn--primary">Get it for free!</a>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="footer__top">
+                        <div class="footer__content">
+                            <h3 class="footer__title">About</h3>
+                            <p class="footer__content-desc">
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.
+                            </p>
+                            <h3 class="footer__title">Connect with us</h3>
+                            <div class="footer__content-social">
+                                <a href="#" class="footer__content-icon">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="footer__content-icon">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="footer__content-icon">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="footer__content-icon">
+                                    <i class="fa fa-dribbble"></i>
+                                </a>
+                                <a href="#" class="footer__content-icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__menu">
+                            <h3 class="footer__title">Navigations</h3>
+                            <div class="footer__menu-list">
+                                <ul class="footer__menu-column">
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Work</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Process</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">About Us</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer__menu-column">
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Press</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Support</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Privacy</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer__menu-column">
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Privacy</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">Process</a>
+                                    </li>
+                                    <li>
+                                        <a class="footer__menu-item" href="#">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        Copyright ©2021. All Rights Reserved. — Designed with love by 
+                        <div class="footer__bottom-links">
+                            <a href="#" class="footer__bottom-link">Untree.co</a>
+                            <i class="fa fa-circle"></i>
+                            <a href="#" class="footer__bottom-link">License</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.js"></script>
+    <script>
+        $(".organize__list").slick({
+            rows: 1,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            speed: 800,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1279,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 1023,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        }),
+
+        $(".review__slide").slick({
+            rows: 1,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 1000,
+            dots: true,
+            prevArrow: '<i class="fa fa-long-arrow-left arrow-left">',
+            nextArrow: '<i class="fa fa-long-arrow-right arrow-right">',
+
+        })
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+        });
+    </script>
+
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>
