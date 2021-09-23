@@ -509,7 +509,7 @@ input, button, textarea {
     padding: 5rem;
   }
   .free__heading {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1115,7 +1115,7 @@ input, button, textarea {
     width: 50%;
   }
   .footer__bottom {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 }
 
